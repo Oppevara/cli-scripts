@@ -1,4 +1,4 @@
-# Õppevar CLI scripts
+# Õppevara CLI scripts
 
 ## Requirements
 
@@ -11,3 +11,5 @@
 * Fill the `config.php` with database connection data
 * Run any script from CLI
   * Example: `php h5p_type_counts.php json`
+  * Example: `php -d memory_limit=512M h5p_content_types_data.php`
+    * This one sets the memory limit to the process (this one requires a lot as it potentially handles huge data types)
